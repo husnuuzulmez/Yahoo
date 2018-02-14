@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="199dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:text="lkwldkqwldk q wldkqlwkdnqlkwd lqkwnd lqkwndq wdqlkwddn lkd qlwdkqlwkdnq qlwkdnqlwkndlqkwnd qlwkndlqkwndlqknwd qlwkndklqkwnd"
+            android:textColor="@android:color/background_light" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imagedownload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/imgflickr"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/download" />
+
+            <ImageView
+                android:id="@+id/imgflickr"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/texview1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/flickrpreview" />
+
+            <TextView
+                android:id="@+id/texview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/texview1"
+                android:layout_alignBottom="@+id/texview1"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_toLeftOf="@+id/imgflickr"
+                android:layout_toStartOf="@+id/imgflickr"
+                android:gravity="center_vertical"
+                android:text="Open"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/texview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/imagedownload"
+                android:layout_toRightOf="@+id/imagedownload"
+                android:text="Download"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
